@@ -1,0 +1,21 @@
+.heading {
+    list-style: none;
+    display: flex;
+}
+
+.item {
+    padding: 10px 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.itemACtive {
+    composes: item;
+    background-color: #000;
+    color: #fff;
+}
+
+.content {
+    padding: 15px;
+}

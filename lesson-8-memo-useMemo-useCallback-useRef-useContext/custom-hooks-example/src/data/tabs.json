@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "title": "First title",
+        "content": "First tab content"
+    },
+    {
+        "id": "2",
+        "title": "Second title",
+        "content": "Second tab content"
+    }
+]

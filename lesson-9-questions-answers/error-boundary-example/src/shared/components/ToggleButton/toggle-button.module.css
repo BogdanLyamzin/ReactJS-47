@@ -1,0 +1,17 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btnActive {
+    composes: btn;
+    background-color: red;
+    color: #fff;
+}

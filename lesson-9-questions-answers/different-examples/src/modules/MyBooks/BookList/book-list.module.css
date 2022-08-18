@@ -1,0 +1,12 @@
+.item {
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+.btnWrapper {
+    display: inline-block;
+    margin-left: 10px;
+}

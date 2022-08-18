@@ -1,0 +1,10 @@
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: red;
+    padding: 10px 15px;
+    cursor: pointer;
+}

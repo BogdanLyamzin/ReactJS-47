@@ -1,0 +1,19 @@
+export const getBooks = store => store.books;
+
+export const getFilteredBooks = ({books, filter}) => {
+    const normalizedFilter = filter.toLowerCase();
+    const result = books.filter(({title, author}) => {
+        const normalizedTitle = title.toLowerCase();
+        const normalizedAuthor = author.toLowerCase();
+        return (normalizedTitle.includes(normalizedFilter) || normalizedAuthor.includes(normalizedFilter))
+    });
+
+    return result;
+}
+
+export const getfavoriteBooks = store => {
+    const favoriteBooks = store.books.filter(({favorite}) => favorite);
+    return favoriteBooks;
+};
+
+export const getFilter = ({filter}) => filter;

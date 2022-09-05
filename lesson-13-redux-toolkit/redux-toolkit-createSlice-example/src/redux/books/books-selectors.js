@@ -1,10 +1,9 @@
 export const getBooks = store => store.books;
 
 export const getFilteredBooks = ({books, filter}) => {
-    if(!filter){
+    if(!filter) {
         return books;
     }
-    
     const normalizedFilter = filter.toLowerCase();
     const result = books.filter(({title, author}) => {
         const normalizedTitle = title.toLowerCase();
@@ -15,9 +14,8 @@ export const getFilteredBooks = ({books, filter}) => {
     return result;
 }
 
-export const getfavoriteBooks = store => {
-    const favoriteBooks = store.books.filter(({favorite}) => favorite);
+export const getFavoriteBooks = ({books}) => {
+    const favoriteBooks = books.filter(({favorite}) => favorite);
     return favoriteBooks;
 };
 
-export const getFilter = ({filter}) => filter;

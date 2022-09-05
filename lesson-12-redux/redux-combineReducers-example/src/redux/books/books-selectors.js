@@ -1,6 +1,10 @@
 export const getBooks = store => store.books;
 
 export const getFilteredBooks = ({books, filter}) => {
+    if(!filter){
+        return books;
+    }
+    
     const normalizedFilter = filter.toLowerCase();
     const result = books.filter(({title, author}) => {
         const normalizedTitle = title.toLowerCase();
